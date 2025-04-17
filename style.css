@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, #78E2D0, #2C9C7C);
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.main-copy {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sub-copy {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #ffffff;
+  color: #2C9C7C;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #e0f7f4;
+}
+
+.app-image {
+  max-width: 300px;
+  margin-top: 40px;
+}
+
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+  background-color: #1a4f41;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.legal-section {
+  padding: 60px 20px;
+  background-color: #f6f6f6;
+  color: #333333;
+}
+
+.legal-section h2 {
+  color: #2C9C7C;
+  margin-bottom: 20px;
+}
+
+.legal-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .main-copy {
+    font-size: 1.8rem;
+  }
+  .sub-copy {
+    font-size: 1rem;
+  }
+  .app-image {
+    max-width: 200px;
+  }
+}
