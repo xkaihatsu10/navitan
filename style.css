@@ -1,91 +1,132 @@
-body {
-  margin: 0;
-  font-family: 'Helvetica Neue', sans-serif;
-  background: linear-gradient(135deg, #78E2D0, #2C9C7C);
-  color: #ffffff;
-  line-height: 1.6;
+/* style.css */
+
+/* ========== ベース ========== */
+* {
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: #fff;
+}
+
+/* ========== Hero ========== */
 .hero {
-  padding: 80px 20px;
-  text-align: center;
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 8vw;
+  background: linear-gradient(135deg, #c8ffd4 0%, #96e4ff 100%);
 }
 
 .hero-content {
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 540px;
 }
 
 .main-copy {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  margin: 0 0 20px;
+  line-height: 1.3;
 }
 
 .sub-copy {
-  font-size: 1.1rem;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+  font-size: 1rem;
 }
 
 .contact-btn {
   display: inline-block;
   padding: 12px 28px;
-  background-color: #ffffff;
-  color: #2C9C7C;
-  border-radius: 8px;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #00b87b;
+  border-radius: 9999px;
   text-decoration: none;
-  transition: background-color 0.3s;
+  transition: opacity 0.2s ease;
 }
 
 .contact-btn:hover {
-  background-color: #e0f7f4;
+  opacity: 0.8;
 }
 
 .app-image {
-  max-width: 300px;
-  margin-top: 40px;
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
 }
 
+/* ========== Footer ========== */
 .footer {
+  padding: 24px 8vw;
   text-align: center;
-  padding: 40px 20px;
-  font-size: 0.9rem;
-  background-color: #1a4f41;
+  background: #f2f4f5;
 }
 
 .footer-links a {
-  margin: 0 10px;
-  color: #ffffff;
+  margin: 0 12px;
+  color: #00b87b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-links a:hover {
   text-decoration: underline;
 }
 
+copyright {
+  margin-top: 12px;
+  font-size: 0.85rem;
+}
+
+/* ========== Legal Sections ========== */
 .legal-section {
-  padding: 60px 20px;
-  background-color: #f6f6f6;
-  color: #333333;
+  padding: 50px 8vw;
+  background: #fafafa;
+  border-top: 1px solid #e0e0e0;
+}
+
+.legal-section:nth-of-type(even) {
+  background: #ffffff;
 }
 
 .legal-section h2 {
-  color: #2C9C7C;
-  margin-bottom: 20px;
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #00b87b;
 }
 
-.legal-section p {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1rem;
+.legal-section h3 {
+  margin: 32px 0 8px;
+  font-size: 1.15rem;
 }
 
-@media screen and (max-width: 600px) {
-  .main-copy {
-    font-size: 1.8rem;
+.legal-section ul {
+  padding-left: 1.2em;
+  margin: 0;
+}
+
+.legal-section li {
+  margin-bottom: 6px;
+}
+
+/* ========== レスポンシブ ========== */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
   }
-  .sub-copy {
-    font-size: 1rem;
+
+  .hero-content {
+    max-width: 100%;
   }
+
   .app-image {
-    max-width: 200px;
+    margin-top: 40px;
   }
 }
